@@ -12,6 +12,57 @@
       transform: scale(1.03) rotate(-1deg);
       transition: box-shadow 0.4s, border-color 0.4s, transform 0.4s;
     }
+      /* Responsive Styles */
+      @media (max-width: 600px) {
+        body {
+          font-size: 16px;
+          padding: 0;
+        }
+        nav {
+          flex-direction: column;
+          gap: 10px;
+          padding: 10px 0;
+        }
+        section {
+          padding: 40px 8px;
+          max-width: 98vw;
+          margin-bottom: 24px;
+          border-radius: 12px;
+        }
+        h1, h2, h3 {
+          font-size: 1.3em;
+          margin: 12px 0;
+        }
+        iframe {
+          min-height: 220px;
+          height: 220px;
+          border-radius: 6px;
+        }
+        #portfolio iframe {
+          min-height: 180px;
+          height: 180px;
+        }
+        .home-flex {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .home-flex svg {
+          width: 56px;
+          height: 56px;
+        }
+        ol {
+          padding-left: 18px;
+          text-align: left;
+        }
+        footer {
+          padding: 24px 4px;
+          font-size: 13px;
+        }
+        a, button {
+          padding: 8px 12px;
+          font-size: 15px;
+        }
+      }
     /* Global Styles */
     html {
       scroll-behavior: smooth;
@@ -104,7 +155,7 @@
 
   <!-- Homepage -->
   <section id="home">
-    <div style="display:flex;justify-content:center;align-items:center;flex-direction:column;gap:16px;">
+  <div class="home-flex" style="display:flex;justify-content:center;align-items:center;flex-direction:column;gap:16px;">
       <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 0 16px #13FFD2);animation:spinGlow 2s linear infinite;">
         <circle cx="40" cy="40" r="32" stroke="#13FFD2" stroke-width="4" fill="#6D00FF"/>
         <path d="M40 20 L60 60 L20 60 Z" fill="#FF0099" stroke="#13FFD2" stroke-width="2"/>
