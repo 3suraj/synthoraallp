@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synthoraa – Forged by Synth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    #portfolio iframe:hover {
+      box-shadow: 0 0 64px 16px #FF0099, 0 0 128px 32px #13FFD2;
+      border-color: #FF0099;
+      transform: scale(1.03) rotate(-1deg);
+      transition: box-shadow 0.4s, border-color 0.4s, transform 0.4s;
+    }
+    /* Global Styles */
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(120deg, #13FFD2 0%, #6D00FF 50%, #FF0099 100%, #00ffea 80%);
+      background-size: 200% 200%;
+      animation: gradientShift 10s linear infinite;
+      color: #fff;
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    h1, h2, h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      margin: 20px 0;
+      text-shadow: 0 0 12px #13FFD2, 0 0 24px #6D00FF, 0 0 32px #FF0099;
+    }
+    a, button {
+      color: #13FFD2;
+      text-decoration: none;
+      border: 1px solid #13FFD2;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: 0.3s;
+      box-shadow: 0 0 8px #13FFD2, 0 0 16px #6D00FF;
+    }
+    a:hover, button:hover {
+      background: #13FFD2;
+      color: #000;
+      box-shadow: 0 0 16px #13FFD2, 0 0 32px #FF0099;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+      background: rgba(30, 30, 60, 0.35);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px 0 rgba(31, 255, 220, 0.25);
+      backdrop-filter: blur(12px);
+      border: 1.5px solid rgba(19, 255, 210, 0.25);
+      margin-bottom: 40px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      font-size: 14px;
+    }
+    iframe {
+      width: 100%;
+      min-height: 400px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 24px 4px #13FFD2, 0 0 48px 8px #6D00FF;
+      transition: box-shadow 0.4s;
+    }
+    #portfolio iframe {
+      border: 2px solid #13FFD2;
+      animation: neonBorder 2s infinite alternate;
+    }
+    @keyframes neonBorder {
+      0% { box-shadow: 0 0 24px 4px #13FFD2, 0 0 48px 8px #6D00FF; }
+      100% { box-shadow: 0 0 48px 8px #FF0099, 0 0 96px 16px #00ffea; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#story">Story</a>
+    <a href="#services">Services</a>
+    <a href="#process">Process</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Homepage -->
+  <section id="home">
+    <div style="display:flex;justify-content:center;align-items:center;flex-direction:column;gap:16px;">
+      <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 0 16px #13FFD2);animation:spinGlow 2s linear infinite;">
+        <circle cx="40" cy="40" r="32" stroke="#13FFD2" stroke-width="4" fill="#6D00FF"/>
+        <path d="M40 20 L60 60 L20 60 Z" fill="#FF0099" stroke="#13FFD2" stroke-width="2"/>
+      </svg>
+      <h1>Where Vision Solidifies</h1>
+    </div>
+    <p>You’ve got a spark. An idea. A whisper of what could be. At Synthoraa, we don’t just see it. We sculpt it.</p>
+    <a href="#services">Explore the Foundry →</a>
+  </section>
+  <style>
+    @keyframes spinGlow {
+      0% { filter: drop-shadow(0 0 16px #13FFD2); transform: rotate(0deg); }
+      50% { filter: drop-shadow(0 0 32px #FF0099); transform: rotate(180deg); }
+      100% { filter: drop-shadow(0 0 16px #13FFD2); transform: rotate(360deg); }
+    }
+  </style>
+
+  <!-- Brand/Story -->
+  <section id="story">
+    <h2>Forged Differently.</h2>
+    <p>Born from the tension between human creativity and machine precision, Synthoraa isn’t just built to create — it’s wired to translate raw vision into real, moving content.</p>
+    <p><em>Crafted in the Foundry. Forged to stand apart.</em></p>
+    <a href="#contact">Meet Synth →</a>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Built to Create.</h2>
+    <h3>🎬 AI 3D Explainers</h3>
+    <p>Your idea is bold. But complex. We break it down, build it up, and make it move — in 60 seconds or less.<br><strong>Best for:</strong> Startups, Product Demos | <strong>TAT:</strong> 4–5 Days</p>
+
+    <h3>⚡ Motion Reels</h3>
+    <p>In a world that scrolls fast, you get 5 seconds. We make them cinematic.<br><strong>Best for:</strong> Launches, Events | <strong>TAT:</strong> 3 Days</p>
+
+    <h3>🔧 Custom Visual Builds</h3>
+    <p>You need something… unreal. That’s when the Foundry awakens.<br><strong>Best for:</strong> Pitch decks, Ad campaigns | <strong>TAT:</strong> Project-based</p>
+
+    <h3>🧩 Synth-Assisted Creative</h3>
+    <p>You brief. Synth handles everything. From copy to visuals to delivery.<br><strong>Best for:</strong> Founders, Solo Creators</p>
+
+    <a href="#contact">Feed the Foundry →</a>
+  </section>
+
+  <!-- Process -->
+  <section id="process">
+    <h2>How the Foundry Works</h2>
+    <ol>
+      <li><strong>Feed the Foundry</strong> – Submit your idea. Synth listens.</li>
+      <li><strong>Receive the Blueprint</strong> – Get timeline & expectations in 24 hours.</li>
+      <li><strong>Build Begins</strong> – AI + Design + Voice + Animation.</li>
+      <li><strong>Test & Tweak</strong> – You give notes, we fine-tune.</li>
+      <li><strong>Deliver & Deploy</strong> – Ready to go live.</li>
+    </ol>
+    <a href="#contact">Test it → Feed the Foundry</a>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio">
+    <h2>What We’ve Forged</h2>
+    <p>[Embed YouTube / Vimeo / Google Drive previews here]</p>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+    <a href="mailto:sync@synthoraa.com">Request Case Study →</a>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Let’s Build Something Unreal.</h2>
+    <p>Not sure where to start? That’s okay. Everyone starts somewhere.</p>
+    <h3>Brief Intake (Tally.so)</h3>
+    <iframe src="https://tally.so/embed/your-form-link"></iframe>
+    <h3>Discovery Call (Calendly)</h3>
+    <iframe src="https://calendly.com/your-link"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Forged by Synth. <br> An AI-powered foundary building branded motion for bold minds.</p>
+    <p>Home · Services · Portfolio · Feed the Foundry <br> Email: sync@synthoraa.com</p>
+  </footer>
+
+</body>
+</html>
