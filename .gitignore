@@ -1,0 +1,7 @@
+# Private documents directory
+private-docs/
+*.pdf
+
+# OS specific files
+.DS_Store
+Thumbs.db

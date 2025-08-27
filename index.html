@@ -3,146 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Synthoraa – Forged by Synth</title>
+  <title>Synthoraa – AI-Powered Content Creation Studio</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-  <style>
-    #portfolio iframe:hover {
-      box-shadow: 0 0 64px 16px #FF0099, 0 0 128px 32px #13FFD2;
-      border-color: #FF0099;
-      transform: scale(1.03) rotate(-1deg);
-      transition: box-shadow 0.4s, border-color 0.4s, transform 0.4s;
-    }
-      /* Responsive Styles */
-      @media (max-width: 600px) {
-        body {
-          font-size: 16px;
-          padding: 0;
-        }
-        nav {
-          flex-direction: column;
-          gap: 10px;
-          padding: 10px 0;
-        }
-        section {
-          padding: 40px 8px;
-          max-width: 98vw;
-          margin-bottom: 24px;
-          border-radius: 12px;
-        }
-        h1, h2, h3 {
-          font-size: 1.3em;
-          margin: 12px 0;
-        }
-        iframe {
-          min-height: 220px;
-          height: 220px;
-          border-radius: 6px;
-        }
-        #portfolio iframe {
-          min-height: 180px;
-          height: 180px;
-        }
-        .home-flex {
-          flex-direction: column;
-          gap: 10px;
-        }
-        .home-flex svg {
-          width: 56px;
-          height: 56px;
-        }
-        ol {
-          padding-left: 18px;
-          text-align: left;
-        }
-        footer {
-          padding: 24px 4px;
-          font-size: 13px;
-        }
-        a, button {
-          padding: 8px 12px;
-          font-size: 15px;
-        }
-      }
-    /* Global Styles */
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(120deg, #13FFD2 0%, #6D00FF 50%, #FF0099 100%, #00ffea 80%);
-      background-size: 200% 200%;
-      animation: gradientShift 10s linear infinite;
-      color: #fff;
-    }
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    h1, h2, h3 {
-      font-family: 'Space Grotesk', sans-serif;
-      margin: 20px 0;
-      text-shadow: 0 0 12px #13FFD2, 0 0 24px #6D00FF, 0 0 32px #FF0099;
-    }
-    a, button {
-      color: #13FFD2;
-      text-decoration: none;
-      border: 1px solid #13FFD2;
-      padding: 10px 20px;
-      border-radius: 4px;
-      transition: 0.3s;
-      box-shadow: 0 0 8px #13FFD2, 0 0 16px #6D00FF;
-    }
-    a:hover, button:hover {
-      background: #13FFD2;
-      color: #000;
-      box-shadow: 0 0 16px #13FFD2, 0 0 32px #FF0099;
-    }
-    section {
-      padding: 80px 20px;
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-      background: rgba(30, 30, 60, 0.35);
-      border-radius: 24px;
-      box-shadow: 0 8px 32px 0 rgba(31, 255, 220, 0.25);
-      backdrop-filter: blur(12px);
-      border: 1.5px solid rgba(19, 255, 210, 0.25);
-      margin-bottom: 40px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px;
-    }
-    footer {
-      text-align: center;
-      padding: 40px;
-      border-top: 1px solid rgba(255,255,255,0.2);
-      font-size: 14px;
-    }
-    iframe {
-      width: 100%;
-      min-height: 400px;
-      border: none;
-      border-radius: 8px;
-      box-shadow: 0 0 24px 4px #13FFD2, 0 0 48px 8px #6D00FF;
-      transition: box-shadow 0.4s;
-    }
-    #portfolio iframe {
-      border: 2px solid #13FFD2;
-      animation: neonBorder 2s infinite alternate;
-    }
-    @keyframes neonBorder {
-      0% { box-shadow: 0 0 24px 4px #13FFD2, 0 0 48px 8px #6D00FF; }
-      100% { box-shadow: 0 0 48px 8px #FF0099, 0 0 96px 16px #00ffea; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Navigation -->
   <nav>
     <a href="#home">Home</a>
@@ -155,85 +20,281 @@
 
   <!-- Homepage -->
   <section id="home">
-  <div class="home-flex" style="display:flex;justify-content:center;align-items:center;flex-direction:column;gap:16px;">
+    <div class="home-flex">
       <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 0 16px #13FFD2);animation:spinGlow 2s linear infinite;">
         <circle cx="40" cy="40" r="32" stroke="#13FFD2" stroke-width="4" fill="#6D00FF"/>
         <path d="M40 20 L60 60 L20 60 Z" fill="#FF0099" stroke="#13FFD2" stroke-width="2"/>
       </svg>
-      <h1>Where Vision Solidifies</h1>
+      <h1>Intelligent Content Creation</h1>
     </div>
-    <p>You’ve got a spark. An idea. A whisper of what could be. At Synthoraa, we don’t just see it. We sculpt it.</p>
-    <a href="#services">Explore the Foundry →</a>
+    <div class="home-content">
+      <p class="tagline">Where AI-Powered Storytelling Meets Creative Excellence</p>
+      <p>Synthoraa is a tech-enabled content studio helping brands create high-quality videos at speed and scale — using automation, smart workflows, and AI tools, all under one creative system.</p>
+      <div class="home-features">
+        <div class="feature">
+          <h3>🎯 80% Automated</h3>
+          <p>Production pipeline powered by AI</p>
+        </div>
+        <div class="feature">
+          <h3>🌐 Global Ready</h3>
+          <p>Multilingual content that scales</p>
+        </div>
+        <div class="feature">
+          <h3>⚡ Agency Quality</h3>
+          <p>At software delivery speed</p>
+        </div>
+      </div>
+    </div>
+    <a href="#services">Explore Our Services →</a>
   </section>
-  <style>
-    @keyframes spinGlow {
-      0% { filter: drop-shadow(0 0 16px #13FFD2); transform: rotate(0deg); }
-      50% { filter: drop-shadow(0 0 32px #FF0099); transform: rotate(180deg); }
-      100% { filter: drop-shadow(0 0 16px #13FFD2); transform: rotate(360deg); }
-    }
-  </style>
 
   <!-- Brand/Story -->
   <section id="story">
-    <h2>Forged Differently.</h2>
-    <p>Born from the tension between human creativity and machine precision, Synthoraa isn’t just built to create — it’s wired to translate raw vision into real, moving content.</p>
-    <p><em>Crafted in the Foundry. Forged to stand apart.</em></p>
-    <a href="#contact">Meet Synth →</a>
+    <h2>The Synthoraa Story</h2>
+    <div class="story-content">
+      <div class="name-story">
+        <h3>Why "Synthoraa"?</h3>
+        <div class="name-components">
+          <div class="component">
+            <h4>Synth</h4>
+            <p>The synthesis of storytelling, technology, and automation</p>
+          </div>
+          <div class="component">
+            <h4>Aura</h4>
+            <p>The emotional soul behind every brand story</p>
+          </div>
+          <div class="component">
+            <h4>Extra "a"</h4>
+            <p>Amplification, Autonomy, Authenticity</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="vision">
+        <h3>Our Vision</h3>
+        <p>We're solving a crucial problem in content creation. Most businesses struggle with:</p>
+        <ul class="pain-points">
+          <li>❌ Slow, expensive traditional agencies</li>
+          <li>❌ Disconnected freelancer networks</li>
+          <li>❌ Lack of consistent storytelling strategy</li>
+          <li>❌ Inability to scale content production</li>
+        </ul>
+        <p>Our solution? A unique, efficient, automation-first system that delivers consistent video content with the creative edge of a full agency, but the agility of a lean tech studio.</p>
+      </div>
+      
+      <div class="future">
+        <h3>🌐 Global Vision</h3>
+        <p>With plans to establish in Dubai, we're positioning Synthoraa as a global player in AI-powered content creation, serving clients across the Middle East, Europe, and beyond.</p>
+        
+        <div class="global-presence">
+          <div class="global-features">
+            <div class="feature">
+              <h4>🏢 Dubai Hub</h4>
+              <p>Strategic base for international operations with zero tax benefits</p>
+            </div>
+            <div class="feature">
+              <h4>💳 Global Payments</h4>
+              <p>Seamless international transactions and automated billing</p>
+            </div>
+            <div class="feature">
+              <h4>🤝 24/7 Support</h4>
+              <p>AI-powered assistance across all time zones</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#contact">Start Your Journey →</a>
   </section>
 
   <!-- Services -->
   <section id="services">
-    <h2>Built to Create.</h2>
-    <h3>🎬 AI 3D Explainers</h3>
-    <p>Your idea is bold. But complex. We break it down, build it up, and make it move — in 60 seconds or less.<br><strong>Best for:</strong> Startups, Product Demos | <strong>TAT:</strong> 4–5 Days</p>
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>🎬 AI 3D Explainers</h3>
+        <p>Complex ideas, simplified and animated in 60 seconds or less.</p>
+        <ul>
+          <li>AI-assisted scripting</li>
+          <li>3D visualization</li>
+          <li>Professional voiceover</li>
+        </ul>
+        <div class="service-meta">
+          <span>Best for: Startups, Product Demos</span>
+          <span>TAT: 4-5 Days</span>
+        </div>
+      </div>
 
-    <h3>⚡ Motion Reels</h3>
-    <p>In a world that scrolls fast, you get 5 seconds. We make them cinematic.<br><strong>Best for:</strong> Launches, Events | <strong>TAT:</strong> 3 Days</p>
+      <div class="service-card">
+        <h3>⚡ Motion Reels</h3>
+        <p>Scroll-stopping, cinematic content for social media.</p>
+        <ul>
+          <li>Platform-optimized</li>
+          <li>Multi-format delivery</li>
+          <li>Brand-aligned visuals</li>
+        </ul>
+        <div class="service-meta">
+          <span>Best for: Launches, Events</span>
+          <span>TAT: 3 Days</span>
+        </div>
+      </div>
 
-    <h3>🔧 Custom Visual Builds</h3>
-    <p>You need something… unreal. That’s when the Foundry awakens.<br><strong>Best for:</strong> Pitch decks, Ad campaigns | <strong>TAT:</strong> Project-based</p>
+      <div class="service-card">
+        <h3>🌐 Global Content</h3>
+        <p>Multilingual content that resonates across borders.</p>
+        <ul>
+          <li>Multiple language versions</li>
+          <li>Cultural adaptation</li>
+          <li>Market-specific editing</li>
+        </ul>
+        <div class="service-meta">
+          <span>Best for: International Brands</span>
+          <span>TAT: Custom</span>
+        </div>
+      </div>
 
-    <h3>🧩 Synth-Assisted Creative</h3>
-    <p>You brief. Synth handles everything. From copy to visuals to delivery.<br><strong>Best for:</strong> Founders, Solo Creators</p>
-
-    <a href="#contact">Feed the Foundry →</a>
+      <div class="service-card featured">
+        <span class="badge">Most Popular</span>
+        <h3>🎯 Monthly Retainer</h3>
+        <p>Consistent, high-quality content delivered on autopilot.</p>
+        <ul>
+          <li>AI-planned content calendar</li>
+          <li>Weekly deliverables</li>
+          <li>Automated payments</li>
+          <li>Priority support</li>
+        </ul>
+        <div class="service-meta">
+          <span>Best for: Growing Brands</span>
+          <span>Automated Growth</span>
+        </div>
+      </div>
+    </div>
+    <a href="#contact">Get Started →</a>
   </section>
 
   <!-- Process -->
   <section id="process">
-    <h2>How the Foundry Works</h2>
-    <ol>
-      <li><strong>Feed the Foundry</strong> – Submit your idea. Synth listens.</li>
-      <li><strong>Receive the Blueprint</strong> – Get timeline & expectations in 24 hours.</li>
-      <li><strong>Build Begins</strong> – AI + Design + Voice + Animation.</li>
-      <li><strong>Test & Tweak</strong> – You give notes, we fine-tune.</li>
-      <li><strong>Deliver & Deploy</strong> – Ready to go live.</li>
-    </ol>
-    <a href="#contact">Test it → Feed the Foundry</a>
+    <h2>Our Process</h2>
+    <div class="process-flow">
+      <div class="process-step">
+        <span class="step-number">01</span>
+        <h3>AI-Powered Brief</h3>
+        <p>Share your vision. Our system analyzes and optimizes your requirements.</p>
+      </div>
+      
+      <div class="process-step">
+        <span class="step-number">02</span>
+        <h3>Smart Production</h3>
+        <p>Our AI handles 80% of the production pipeline while maintaining creative quality.</p>
+      </div>
+      
+      <div class="process-step">
+        <span class="step-number">03</span>
+        <h3>Human Review</h3>
+        <p>Expert oversight ensures brand alignment and creative excellence.</p>
+      </div>
+      
+      <div class="process-step">
+        <span class="step-number">04</span>
+        <h3>Rapid Delivery</h3>
+        <p>Quick turnaround with options for revisions and format variations.</p>
+      </div>
+    </div>
+
+    <div class="process-tools">
+      <h3>Our AI-Powered Pipeline</h3>
+      <div class="tools-grid">
+        <div class="tool-item">
+          <h4>📝 Script Creation</h4>
+          <p>Advanced AI writing and research</p>
+        </div>
+        <div class="tool-item">
+          <h4>🎙️ Voiceover</h4>
+          <p>Multilingual AI voice synthesis</p>
+        </div>
+        <div class="tool-item">
+          <h4>🎨 Visual Generation</h4>
+          <p>AI-powered design and animation</p>
+        </div>
+        <div class="tool-item">
+          <h4>✂️ Smart Editing</h4>
+          <p>Automated video compilation</p>
+        </div>
+      </div>
+    </div>
+    <a href="#contact">Start Your Project →</a>
+  </section>
+
+  <!-- Client Journey -->
+  <section id="journey">
+    <h2>Your Automated Journey</h2>
+    <div class="journey-steps">
+      <div class="journey-card">
+        <h3>🤝 Smart Onboarding</h3>
+        <p>AI-powered brief collection, automated project setup, and instant resource allocation.</p>
+        <ul>
+          <li>Intelligent brief analysis</li>
+          <li>Automated folder structure</li>
+          <li>Instant project initialization</li>
+        </ul>
+      </div>
+      
+      <div class="journey-card">
+        <h3>📊 Project Management</h3>
+        <p>Automated tracking, updates, and milestone management through our CRM system.</p>
+        <ul>
+          <li>Real-time progress tracking</li>
+          <li>Automated status updates</li>
+          <li>Smart deadline management</li>
+        </ul>
+      </div>
+      
+      <div class="journey-card">
+        <h3>🔄 Continuous Engagement</h3>
+        <p>AI-driven follow-ups, content planning, and relationship management.</p>
+        <ul>
+          <li>Weekly content strategies</li>
+          <li>Automated check-ins</li>
+          <li>Performance analytics</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
   <!-- Portfolio -->
   <section id="portfolio">
-    <h2>What We’ve Forged</h2>
-    <p>[Embed YouTube / Vimeo / Google Drive previews here]</p>
-    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
-    <a href="mailto:sync@synthoraa.com">Request Case Study →</a>
+    <h2>Featured Work</h2>
+    <div class="portfolio-grid">
+      <!-- Portfolio items will be added here -->
+      <p>[Portfolio items coming soon]</p>
+    </div>
+    <a href="mailto:sync@synthoraa.com">Request Portfolio →</a>
   </section>
 
   <!-- Contact -->
   <section id="contact">
-    <h2>Let’s Build Something Unreal.</h2>
-    <p>Not sure where to start? That’s okay. Everyone starts somewhere.</p>
-    <h3>Brief Intake (Tally.so)</h3>
-    <iframe src="https://tally.so/embed/your-form-link"></iframe>
-    <h3>Discovery Call (Calendly)</h3>
-    <iframe src="https://calendly.com/your-link"></iframe>
+    <h2>Let's Create Together</h2>
+    <div class="contact-options">
+      <div class="contact-form">
+        <h3>✨ Share Your Project</h3>
+        <iframe src="https://tally.so/embed/your-form-link"></iframe>
+      </div>
+      
+      <div class="contact-call">
+        <h3>🗣️ Schedule a Call</h3>
+        <p>Book a discovery call to discuss your content needs and explore how we can help.</p>
+        <iframe src="https://calendly.com/your-link"></iframe>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>Forged by Synth. <br> An AI-powered foundary building branded motion for bold minds.</p>
-    <p>Home · Services · Portfolio · Feed the Foundry <br> Email: sync@synthoraa.com</p>
+    <div class="footer-content">
+      <p><strong>Synthoraa</strong><br>AI-Powered Content Creation Studio</p>
+      <p>Creating impactful stories through the fusion of AI and creativity</p>
+      <p>Email: sync@synthoraa.com</p>
+    </div>
   </footer>
 
 </body>
