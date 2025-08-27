@@ -1,0 +1,108 @@
+#services {
+    margin-top: 60px !important;
+    padding-top: 60px !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
+
+.services-grid {
+    display: grid !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+    gap: 2rem !important;
+    margin: 3rem auto !important;
+    padding: 0 !important;
+}
+
+.service-card {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    flex-direction: column !important;
+    background: rgba(30, 30, 60, 0.8) !important;
+    padding: 30px !important;
+    border: 2px solid var(--primary) !important;
+    border-radius: 16px !important;
+    transition: all 0.3s ease !important;
+    position: relative !important;
+    min-height: 320px !important;
+    margin: 0 !important;
+}
+
+.card-content {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+}
+
+.service-card h3 {
+    color: var(--primary) !important;
+    font-size: 24px !important;
+    margin-bottom: 20px !important;
+    text-shadow: 0 0 8px var(--primary) !important;
+}
+
+.service-card p {
+    color: white !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 1rem !important;
+}
+
+.service-card ul {
+    margin: 1rem 0 !important;
+    padding-left: 0 !important;
+    flex: 1 !important;
+    list-style-type: none !important;
+}
+
+.service-card ul li {
+    color: white !important;
+    margin: 10px 0 !important;
+    position: relative !important;
+    padding-left: 25px !important;
+}
+
+.service-card ul li::before {
+    content: "✓" !important;
+    position: absolute !important;
+    left: 0 !important;
+    color: var(--primary) !important;
+}
+
+.service-meta {
+    margin-top: auto !important;
+    padding-top: 20px !important;
+    border-top: 1px solid rgba(255,255,255,0.1) !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+}
+
+.badge {
+    background: var(--accent) !important;
+    color: white !important;
+    padding: 5px 15px !important;
+    border-radius: 20px !important;
+    position: absolute !important;
+    top: -15px !important;
+    right: 20px !important;
+    font-weight: bold !important;
+    z-index: 2 !important;
+}
+
+.service-card:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 8px 32px rgba(19, 255, 210, 0.2) !important;
+}
+
+.service-card.featured {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 20px rgba(255, 0, 153, 0.2) !important;
+}
