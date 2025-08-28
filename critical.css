@@ -4,21 +4,64 @@
   bottom: 30px !important;
   right: 30px !important;
   display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
   visibility: visible !important;
   opacity: 1 !important;
   pointer-events: auto !important;
-  background: rgba(30, 30, 60, 0.98) !important;
-  box-shadow: 0 4px 24px rgba(19, 255, 210, 0.4) !important;
+  background: rgba(18, 21, 40, 0.95) !important;
+  box-shadow: 0 8px 32px rgba(19, 255, 210, 0.25), 0 2px 8px rgba(0, 0, 0, 0.1) !important;
   z-index: 9999 !important;
   max-width: 300px !important;
   min-width: 250px !important;
-  padding: 15px 20px !important;
-  border-radius: 16px !important;
-  border: 2px solid var(--primary) !important;
+  padding: 16px 20px !important;
+  border-radius: 20px !important;
+  border: 1.5px solid rgba(19, 255, 210, 0.4) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
-  transform: translateY(0) !important;
-  transition: all 0.3s ease !important;
+  transform: translateY(0) scale(1) !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: pointer !important;
+}
+
+.synth-chat:hover {
+  transform: translateY(-5px) scale(1.02) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 12px 40px rgba(19, 255, 210, 0.35), 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.synth-chat .synth-avatar {
+  position: relative !important;
+  width: 48px !important;
+  height: 48px !important;
+  flex-shrink: 0 !important;
+}
+
+.synth-chat .synth-avatar::after {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 2px !important;
+  right: 2px !important;
+  width: 10px !important;
+  height: 10px !important;
+  background: var(--primary) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 10px var(--primary) !important;
+  animation: pulse 2s infinite !important;
+}
+
+.synth-chat p {
+  margin: 0 !important;
+  font-size: 0.95rem !important;
+  line-height: 1.4 !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: 500 !important;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
 }
 
 #services,

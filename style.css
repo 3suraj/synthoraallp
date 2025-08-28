@@ -1,9 +1,21 @@
 :root {
   --primary: #13FFD2;
+  --primary-dark: #0CC5A1;
+  --primary-light: #7CFFE6;
   --secondary: #6D00FF;
+  --secondary-dark: #5500CC;
   --accent: #FF0099;
-  --bg-dark: rgba(30, 30, 60, 0.35);
+  --accent-dark: #CC007A;
+  --bg-dark: rgba(18, 21, 40, 0.85);
+  --bg-darker: rgba(13, 15, 30, 0.95);
+  --bg-card: rgba(25, 28, 50, 0.95);
   --text: #fff;
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --border-light: rgba(19, 255, 210, 0.2);
+  --border-medium: rgba(19, 255, 210, 0.4);
+  --shadow-soft: 0 8px 32px rgba(19, 255, 210, 0.15);
+  --shadow-strong: 0 12px 40px rgba(19, 255, 210, 0.25);
 }
 
 html {
@@ -13,10 +25,12 @@ html {
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(120deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
-  background-size: 200% 200%;
-  animation: gradientShift 10s linear infinite;
+  background: linear-gradient(135deg, var(--secondary-dark) 0%, var(--secondary) 35%, var(--accent-dark) 100%);
+  background-size: 300% 300%;
+  animation: gradientShift 15s ease infinite;
   color: var(--text);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
 }
 
 /* Typography */
@@ -34,10 +48,24 @@ section {
   text-align: center;
   background: var(--bg-dark);
   border-radius: 24px;
-  box-shadow: 0 8px 32px 0 rgba(31, 255, 220, 0.25);
+  box-shadow: var(--shadow-soft);
   backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(19, 255, 210, 0.25);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid var(--border-medium);
   margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary-light), transparent);
+  opacity: 0.5;
 }
 
 /* Navigation */
