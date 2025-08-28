@@ -1,11 +1,24 @@
 /* Critical styles to ensure visibility and proper functioning */
 .synth-chat {
-  display: block !important;
+  position: fixed !important;
+  bottom: 30px !important;
+  right: 30px !important;
+  display: flex !important;
   visibility: visible !important;
   opacity: 1 !important;
   pointer-events: auto !important;
   background: rgba(30, 30, 60, 0.98) !important;
   box-shadow: 0 4px 24px rgba(19, 255, 210, 0.4) !important;
+  z-index: 9999 !important;
+  max-width: 300px !important;
+  min-width: 250px !important;
+  padding: 15px 20px !important;
+  border-radius: 16px !important;
+  border: 2px solid var(--primary) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  transform: translateY(0) !important;
+  transition: all 0.3s ease !important;
 }
 
 #services,
@@ -18,9 +31,31 @@
 
 .service-card {
   display: flex !important;
+  flex-direction: column !important;
   background: rgba(30, 30, 60, 0.95) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
+  height: auto !important;
+  min-height: 350px !important;
+}
+
+.service-card .card-content {
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  gap: 15px !important;
+}
+
+.service-card ul {
+  flex: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.service-card .service-meta {
+  margin-top: auto !important;
+  padding-top: 15px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
 /* Force sticky nav on mobile */
