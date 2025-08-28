@@ -1,14 +1,18 @@
 /* Contact Form Styles */
 #contact {
   padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 1400px;
+  width: 95%;
 }
 
 .contact-options {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   max-width: 1200px;
   margin: 3rem auto;
+  padding: 0 1rem;
 }
 
 .contact-form, .contact-call {
@@ -17,6 +21,10 @@
   border-radius: 1rem;
   border: 1px solid var(--border-light);
   box-shadow: var(--shadow-soft);
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
 }
 
 .modern-form {
@@ -101,7 +109,7 @@
 
 .contact-info {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 4rem;
   padding: 2rem;
@@ -161,10 +169,12 @@
 }
 
 .calendly-inline-widget {
-  min-height: 600px;
+  min-height: 650px;
   width: 100%;
   border: 1px solid var(--border-light);
   border-radius: 0.5rem;
   overflow: hidden;
   background: var(--bg-darker);
+  flex: 1;
+  margin-top: 1rem;
 }
