@@ -458,6 +458,16 @@ footer {
     overscroll-behavior-y: contain;
   }
 
+  section {
+    padding: 2rem 1rem;
+    margin: 1rem auto;
+    gap: 1.5rem;
+  }
+
+  section:last-of-type {
+    margin-bottom: 5rem;
+  }
+
   .mobile-menu-btn {
     display: block;
   }
