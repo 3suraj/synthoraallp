@@ -115,7 +115,71 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-/* Force sticky nav on mobile */
+/* Override styles for critical elements */
+
+/* Bottom CTA Button */
+.bottom-cta {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  width: auto;
+  text-align: center;
+  pointer-events: none;
+}
+
+.cta-button {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--bg-darker);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+  border: none;
+  box-shadow: 0 4px 20px rgba(19, 255, 210, 0.4);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  pointer-events: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 30px rgba(19, 255, 210, 0.6);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(19, 255, 210, 0.4); }
+  70% { box-shadow: 0 0 0 20px rgba(19, 255, 210, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(19, 255, 210, 0); }
+}
+
+.pulsing {
+  animation: pulse 2s infinite;
+}
+
+/* Mobile optimizations */
+@media (max-width: 600px) {
+  .bottom-cta {
+    bottom: 1rem;
+    width: 90%;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
 @media (max-width: 600px) {
   nav {
     position: sticky !important;

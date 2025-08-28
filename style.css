@@ -487,14 +487,30 @@ footer {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
+    height: auto;
+    max-height: 100vh;
+    overflow-y: auto;
   }
 
   nav a {
     width: 100%;
     text-align: center;
-    padding: 12px;
+    padding: 1rem;
     border-radius: 8px;
     background: rgba(30, 30, 60, 0.5);
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-light);
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover {
+    background: var(--primary);
+    color: var(--bg-darker);
+    transform: translateY(-2px);
   }
 
   section {
