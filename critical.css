@@ -4,6 +4,8 @@
   visibility: visible !important;
   opacity: 1 !important;
   pointer-events: auto !important;
+  background: rgba(30, 30, 60, 0.98) !important;
+  box-shadow: 0 4px 24px rgba(19, 255, 210, 0.4) !important;
 }
 
 #services,
@@ -35,6 +37,13 @@
   .service-card {
     margin: 10px 0 !important;
     min-height: unset !important;
+    padding: 25px 20px !important;
+  }
+
+  .service-card p,
+  .service-card li {
+    font-size: 0.95em !important;
+    line-height: 1.5 !important;
   }
 
   .service-meta {
