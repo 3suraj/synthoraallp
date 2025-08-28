@@ -1,0 +1,61 @@
+/* Critical styles to ensure visibility and proper functioning */
+.synth-chat {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+#services,
+.services-grid,
+.service-card {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.service-card {
+  display: flex !important;
+  background: rgba(30, 30, 60, 0.95) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+}
+
+/* Force sticky nav on mobile */
+@media (max-width: 600px) {
+  nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background: rgba(30, 30, 60, 0.95) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+  }
+  
+  .service-card {
+    margin: 10px 0 !important;
+    min-height: unset !important;
+  }
+
+  .service-meta {
+    margin-top: auto !important;
+  }
+
+  /* Ensure proper spacing */
+  section {
+    margin: 15px 10px !important;
+    width: calc(100% - 20px) !important;
+    padding: 40px 15px !important;
+    box-sizing: border-box !important;
+  }
+}
+
+/* Fix iOS notch issues */
+@supports (padding-top: env(safe-area-inset-top)) {
+  body {
+    padding-top: env(safe-area-inset-top) !important;
+    padding-bottom: env(safe-area-inset-bottom) !important;
+    padding-left: env(safe-area-inset-left) !important;
+    padding-right: env(safe-area-inset-right) !important;
+  }
+}
