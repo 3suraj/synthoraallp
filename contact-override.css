@@ -1,0 +1,170 @@
+/* Contact Form Styles */
+#contact {
+  padding: 4rem 2rem;
+}
+
+.contact-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 3rem auto;
+}
+
+.contact-form, .contact-call {
+  background: var(--bg-card);
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-soft);
+}
+
+.modern-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.modern-form input,
+.modern-form select,
+.modern-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 0.5rem;
+  background: var(--bg-darker);
+  color: var(--text);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.modern-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.modern-form label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  padding: 0 0.4rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: var(--bg-darker);
+}
+
+.modern-form input:focus,
+.modern-form select:focus,
+.modern-form textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(19, 255, 210, 0.2);
+}
+
+.modern-form input:focus + label,
+.modern-form select:focus + label,
+.modern-form textarea:focus + label,
+.modern-form input:not(:placeholder-shown) + label,
+.modern-form select:valid + label,
+.modern-form textarea:not(:placeholder-shown) + label {
+  transform: translateY(-1.4rem) translateX(-0.5rem) scale(0.8);
+  background: var(--bg-card);
+  color: var(--primary);
+}
+
+.submit-btn {
+  background: var(--primary);
+  color: var(--bg-darker);
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: none;
+  box-shadow: 0 4px 20px rgba(19, 255, 210, 0.3);
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(19, 255, 210, 0.4);
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 4rem;
+  padding: 2rem;
+  background: var(--bg-card);
+  border-radius: 1rem;
+  border: 1px solid var(--border-light);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-item {
+  text-align: center;
+}
+
+.info-item h4 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.info-item a {
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.info-item a:hover {
+  color: var(--primary);
+  background: none;
+}
+
+@media (max-width: 600px) {
+  #contact {
+    padding: 2rem 1rem;
+  }
+
+  .contact-options {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem auto;
+  }
+
+  .contact-form, .contact-call {
+    padding: 1.5rem;
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+  }
+}
+
+.calendly-inline-widget {
+  min-height: 600px;
+  width: 100%;
+  border: 1px solid var(--border-light);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--bg-darker);
+}
